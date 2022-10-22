@@ -11,7 +11,7 @@ export let title, link;
     border-radius: 10px;
     font-weight: 200;
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 1.5rem;
     text-align: center;
     user-select: none;
     min-width: max-content;
