@@ -1,18 +1,20 @@
 <script>
-  import WorkerList from "$lib/WorkerList.svelte";
-  import Subheader from "../lib/Subheader.svelte";
+  import Subheader from "../../lib/Subheader.svelte";
 
-  let pageTitle = 'Our consultants'
+  let pageTitle = 'Who we are'
 </script>
+
 <svelte:head><title>{pageTitle} • Mtt</title></svelte:head>
 <div class="main">
   <Subheader pageTitle={pageTitle}/>
-  <WorkerList />
+  <h1>We are cuties</h1>
+  <img src="/dog.jpeg" alt="dog">
 </div>
+
 <style>
   .main {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    width: 100%;
   }
 </style>

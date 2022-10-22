@@ -4,35 +4,35 @@
   let sideItems = [
     {
       title: 'Our consultants',
-      link: '',
+      link: '/',
     },
     {
       title: 'Who we are',
-      link: '',
+      link: '/who-we-are',
     },
     {
       title: 'Our services',
-      link: '',
+      link: '/our-services',
     },
     {
       title: 'Our clients',
-      link: '',
+      link: '/our-clients',
     },
     {
       title: 'Vacancies',
-      link: '',
+      link: '/vacancies',
     },
     {
       title: 'HRCI Certification',
-      link: '',
+      link: '/hrci-certification',
     },
     {
       title: 'Digital Tool in Recruitment',
-      link: '',
+      link: '/digital-tool',
     },
     {
       title: 'Contact us',
-      link: '',
+      link: '/contact-us',
     },
   ]
 </script>
@@ -40,11 +40,31 @@
   {#each sideItems as button}
   <SideItem title={button.title} link={button.link}/>
   {/each}
+  <div class="social">
+    <a href="https://www.linkedin.com/company/mtt-llc/" target="_blank" rel="noreferrer external"><img src="/linkedin-fav.png" alt=""></a>
+    <a href="https://www.instagram.com/mtt.az/" target="_blank" rel="noreferrer external"><img src="/insta-fav.png" alt=""></a>
+  </div>
 </div>
 
 <style>
   .sidebar {
-    margin: 0 20px;
+    padding: 5.3rem 20px 0 20px;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+  }
+  .social img {
+    width: 30px;
+    margin: 0 1rem;
+    cursor: pointer;
+
+    transition: 0.08s ease-in-out;
+  }
+  .social img:active {
+    opacity: 0.8;
   }
 </style>
 

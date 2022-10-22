@@ -13,5 +13,13 @@ export let title, link;
     margin-bottom: 20px;
     font-size: 16px;
     text-align: center;
+    user-select: none;
+    min-width: max-content;
+
+    transition: 0.08s ease-in-out;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  div:active {
+    opacity: .8;
   }
 </style>
