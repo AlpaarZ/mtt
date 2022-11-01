@@ -47,6 +47,7 @@
     gap: 10px;
     transition: 0.05s ease;
     max-width: 1700px;
+    justify-content: center;
   }
 
   @media (max-width: 768px) {
