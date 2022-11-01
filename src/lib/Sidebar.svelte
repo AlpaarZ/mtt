@@ -27,8 +27,8 @@
       link: '/hrci-certification',
     },
     {
-      title: 'Digital Tool in Recruitment',
-      link: '/digital-tool',
+      title: 'Digital tools',
+      link: '/digital-tools',
     },
     {
       title: 'Contact us',

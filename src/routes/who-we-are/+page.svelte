@@ -8,13 +8,12 @@
 <div class="main">
   <Subheader pageTitle={pageTitle}/>
   <div class="hero">
-    <img src="/dog.jpeg" alt="dog">
-    <div class="text">
+    <div class="content">
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, laborum hic quo iste aliquam alias sed rem odio voluptas odit saepe nobis natus necessitatibus nemo accusantium molestiae fugiat. Reprehenderit, quae commodi magni eaque accusantium quaerat ullam cupiditate ducimus repellendus, dolorum rerum eum quibusdam? Reprehenderit minima quaerat voluptatum veniam error, nostrum cumque, vel ducimus accusamus vitae quae consequuntur aliquid? Quis porro optio tempore enim, soluta nesciunt quam pariatur eligendi reiciendis necessitatibus blanditiis amet est, laborum, repellendus eveniet debitis quidem facilis praesentium nihil doloribus odit officiis. Exercitationem tempora id dolore! Eum sequi mollitia dicta repudiandae est a quia, consequuntur suscipit provident nobis.
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, laborum hic quo iste aliquam alias sed rem odio voluptas odit saepe nobis natus necessitatibus nemo accusantium molestiae fugiat. Reprehenderit, quae commodi magni eaque accusantium quaerat ullam cupiditate ducimus repellendus, dolorum rerum eum quibusdam? Reprehenderit minima quaerat voluptatum veniam error, nostrum cumque, vel ducimus accusamus vitae quae consequuntur aliquid? Quis porro optio tempore enim, soluta nesciunt quam pariatur eligendi reiciendis necessitatibus blanditiis amet est, laborum, repellendus eveniet debitis quidem facilis praesentium nihil doloribus odit officiis. Exercitationem tempora id dolore! Eum sequi mollitia dicta repudiandae est a quia, consequuntur suscipit provident nobis.
+        In the world of business and technology, we believe that our value proposition is to deliver trust. 
+        Its been an incredible journey for us till date in sourcing quality candidates for the companies’ competitive recruitment needs. 
+        As a modern day agency, we offer a strategic approach to recruiting by taking care of all business values by understanding your requirements and finding you suited candidates from various industries. 
+        We diligently engage with you to understand your quest for talent and then connect you with the best professionals who have sound experience in their respective fields or industry.
       </p>
     </div>
   </div>  
@@ -26,10 +25,6 @@
     flex-direction: column;
     width: 100%;
   }
-  .main img {
-    width: 50%;
-    height: 100%;
-  }
   .hero {
     display: flex;
     flex-direction: row;
@@ -37,6 +32,9 @@
   p {
     color: white;
     font-size: 2rem;
-    margin: 0 20px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 2.5rem;
+    padding: 0 1rem 0 0;
   }
 </style>
