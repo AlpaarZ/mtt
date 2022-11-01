@@ -19,6 +19,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    color: white;
 }
 
 /* make sure to set some focus styles for accessibility */
@@ -369,10 +370,10 @@ textarea {
 }
 
 html {
-    background-color: #151515;
+    background-color: #0f0f0f;
 }
 
-h1, a {
-    color: white;
+h1, a, p {
     text-decoration: none;
+    
 }
