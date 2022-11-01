@@ -13,26 +13,30 @@
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
         dicta, quis, eveniet, blanditiis labore et possimus dolore aperiam
         mollitia neque illo rem quod laborum? Sunt delectus quaerat ipsam
-        excepturi ut enim ab rerum error repellat blanditiis velit, tenetur vitae
-        nemo laboriosam perspiciatis incidunt provident aspernatur praesentium
-        maiores cumque? Laudantium doloribus architecto, harum tempora nemo,
-        provident aliquam enim molestiae ad animi, sint laborum accusamus in.
-        Reprehenderit est libero optio explicabo, consectetur perspiciatis,
-        incidunt perferendis consequuntur delectus quae, eveniet nihil aliquid
-        esse culpa. In inventore quas quos veniam cum iste nemo eos sit, corrupti
-        perspiciatis velit fugiat quisquam pariatur optio cupiditate? Magnam.
+        excepturi ut enim ab rerum error repellat blanditiis velit, tenetur
+        vitae nemo laboriosam perspiciatis incidunt provident aspernatur
+        praesentium maiores cumque? Laudantium doloribus architecto, harum
+        tempora nemo, provident aliquam enim molestiae ad animi, sint laborum
+        accusamus in. Reprehenderit est libero optio explicabo, consectetur
+        perspiciatis, incidunt perferendis consequuntur delectus quae, eveniet
+        nihil aliquid esse culpa. In inventore quas quos veniam cum iste nemo
+        eos sit, corrupti perspiciatis velit fugiat quisquam pariatur optio
+        cupiditate? Magnam.
       </p>
-      <a href="https://easyhire.me/" target="_blank" rel="noreferrer"><button>Find out more</button></a>
+      <a href="https://easyhire.me/" target="_blank" rel="noreferrer"
+        ><button>Find out more</button></a
+      >
     </div>
-    <iframe
-      src="https://www.youtube-nocookie.com/embed/98uKlKvIiOk?autoplay=1&mute=1&loop=1"
-      title="Easyhire video"
-      frameborder="0"
-      autoplay="1"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    />
-    
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/98uKlKvIiOk?autoplay=1&mute=1&loop=1"
+        title="Easyhire video"
+        frameborder="0"
+        autoplay="1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      />
+    </div>
   </div>
   <div class="card-container">
     <div class="card">
@@ -87,11 +91,16 @@
     display: flex;
     flex-direction: row;
   }
+  @media (max-width: 768px) {
+    .video-card {
+      flex-direction: column-reverse;
+    }
+  }
   .video-card .text {
     flex: 1;
     font-size: 1.5rem;
     flex-direction: column;
-  }  
+  }
   .video-card .text button {
     background-color: #373737;
     padding: 20px;
@@ -109,11 +118,23 @@
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
   }
   .video-card .text button:active {
-    opacity: .8;
+    opacity: 0.8;
   }
-  .video-card iframe {
-    width: 800px;
-    height: 450px;
+  .video-card .video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    flex-grow: 0;
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
   }
   .card-container {
     display: flex;

@@ -1,12 +1,16 @@
 <script>
 export let title, link;
+
+function openMenu() {
+    isOpen = !isOpen
+  }
 </script>
 
-<a href="{link}"><div>{title}</div></a>
+<a on:click={openMenu} href="{link}"><div>{title}</div></a>
 
 <style>
   div {
-    background-color: #373737;
+    background-color: var(--grey);
     padding: 20px;
     border-radius: 10px;
     font-weight: 200;
