@@ -11,6 +11,7 @@
     display: inline-block;
     user-select: none;
     transition: 0.08s ease-in-out;
+    resize: both;
   }
   .worker:hover {
     opacity: 0.8;
